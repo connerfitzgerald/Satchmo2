@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<languages ID = "6cd12cb663e67e49dc5a0f7efe433d85">
+   <language content = "CHS"/>
+   <language content = "CHT"/>
+   <language content = "CSY"/>
+   <language content = "DAN"/>
+   <language content = "NLD"/>
+   <language content = "ENG" default = "yes"/>
+   <language content = "FRA"/>
+   <language content = "DEU"/>
+   <language content = "HUN"/>
+   <language content = "ITA"/>
+   <language content = "JPN"/>
+   <language content = "PLK"/>
+   <language content = "PTG"/>
+   <language content = "RUS"/>
+   <language content = "ESN"/>
+   <language content = "THA"/>
+</languages>

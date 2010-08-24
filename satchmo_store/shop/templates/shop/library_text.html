@@ -1,0 +1,42 @@
+{% extends "shop/base.html" %}
+{% load i18n %}
+{% load satchmo_currency %}
+{% load satchmo_order normalize_decimal %}
+
+{% block navbar %}
+   <li class="first"><a href="{{ shop_base }}/">{% trans "Home" %}</a></li>
+   <li><a href="{% url satchmo_account_info %}">{% trans "Account" %}</a></li>
+   <li>{% trans "Order History" %}</li>
+{% endblock %}
+
+{% block content %}
+<div id="orderhistory">
+    <h2>{% trans "Order History" %}</h2>
+    {% if orders %}
+        <table class="ordertable">
+            <thead>
+            <tr>
+                 <th>{% trans 'Items' %}</th>             
+            </tr>
+            </thead>
+            <tbody>
+            {% for order in orders %}
+            <tr>
+                    
+                <td class="orderitems">
+                    {% for item in order.orderitem_set.all %}
+                    {% if not forloop.first %}<br/>{% endif %}
+                    <span class="orderitemqty">{{ item.quantity|normalize_decimal }}</span> <span class="orderitem">{{ item }}<span> 
+                    <a href="url">{{ item }}</a>
+                    {% endfor %}
+                </td>              
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>{% trans "You haven't made any orders yet." %}</p>
+    {% endif %}
+</div>
+{% endblock %}
+

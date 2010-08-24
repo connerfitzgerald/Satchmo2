@@ -1,0 +1,50 @@
+{% extends "shop/base.html" %}
+{% load i18n %}
+{% load satchmo_cart %}
+{% load satchmo_currency %}
+{% load satchmo_util %}
+{% load satchmo_product %}
+{% load satchmo_discounts %}
+{% load normalize_decimal %}
+
+{% block navbar %}
+    <li class="first"><a href="{{shop_base}}/">{% trans "Home" %}</a></li>
+    <li>{% trans "Cart" %}</li>
+{% endblock %}
+
+{% block content %}
+
+{% if error_message %}
+<div class="error">{{ error_message }}</div>
+{% endif %}
+{% if not cart|length %}
+    <h4>{% trans "Your cart is empty." %}</h4>
+{% else %}
+    <h4>{% trans "Your Cart" %}</h4>
+    <table><tr><th></th>
+     <th>Rental Period</th>
+     <th>Price</th>
+    <th align="center">{% if default_view_tax %}{% trans "Total<br/>(incl.&nbsp;tax)" %}{% else %}{% trans "Total" %}{% endif %}</th>
+    </tr>
+
+    {% for cartitem in cart %}
+        <tr><td>
+            <form action="{% url satchmo_cart_remove %}" method="post">
+                <input type="hidden" name="cartitem" value="{{ cartitem.id }}" />
+                <input type="submit" value="Remove" />
+            </form>
+            </td>
+            <td align="center">
+            </td>
+            <td><a href="{{cartitem.product.get_absolute_url}}">{{ cartitem.description }}</a></td>
+            <td align="center">{{ cartitem.duration.price}}</td>
+            <td align="center">{{ cartitem.duration.dateUntil }}</td>
+            <td align="center">{{ cartitem.duration.readableDate}}</td>
+
+        </tr>
+    {% endfor %}
+
+	
+    <a href="{% url satchmo_checkout-step1 %}">{% trans "Check out" %}</a>
+{% endif %}
+{% endblock %}

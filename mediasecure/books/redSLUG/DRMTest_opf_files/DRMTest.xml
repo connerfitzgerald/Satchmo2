@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<package unique-identifier = "{049FCDE5-FF12-465F-A6C2-A5E89F983D41}">
+   <certificate version = "3.0.1" id = "6cd12cb663e67e49dc5a0f7efe433d85" authorid = "drm25asp570">
+      <security encryption = "no">
+         <flipbook id = "6cd12cb663e67e49dc5a0f7efe433d85">
+            <signature content = "dad72961016746094902c43b78db53d4"/>
+            <integrity content = "0dd63cb6ee7ff1b3bf9e64faf56ff25c"/>
+         </flipbook>
+         <encryption content = "586F6348634F3948514B41314657555351655336753533413879764C5277477064315446682B5834555A4D3D"/>
+         <constraints>
+            <date type = "before" value = "2010-08-12"/>
+         </constraints>
+      </security>
+      <rights>
+         <permissions>
+            <pdf allow = "yes"/>
+            <display allow = "yes"/>
+            <enlarge allow = "yes"/>
+            <print allow = "yes"/>
+         </permissions>
+      </rights>
+   </certificate>
+   <certificate_digital_signature>
+      <signature content = "5158756E5052682F6273717777395A6651724C36766A434168414E3857554B6179674A57576267336C42413D"/>
+   </certificate_digital_signature>
+</package>

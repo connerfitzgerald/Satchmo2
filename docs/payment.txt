@@ -1,0 +1,112 @@
+Payment Modules
+===============
+
+Satchmo currently has support for several different payment modules.  This
+document will discuss some of the particular configuration items to keep in
+mind for each module.
+
+.. index:: Authorize.net
+
+Authorize.net
+-------------
+The authorize.net module requires that you have a valid authorize.net account.
+In order to get your transaction key and transaction login, go to the
+`site <http://www.authorize.net/>`_ and complete the account registration process.
+When you have completed it, you can fill in the appropriate fields in the
+admin settings to enable this payment processor.
+
+If you have a test account with authorize.net and you log in through
+https://test.authorize.net/gateway/transact.dll, then you should use the default 
+test URL.  If you do not have a test account you will get an Error 13 message 
+unless you change the URL to https://secure.authorize.net/gateway/transact.dll.  
+You will also need to login in to authorize.net and make sure your account has 
+test mode turned on.
+
+.. index:: TrustCommerce
+
+TrustCommerce
+-------------
+TrustCommerce configuration is very similar to authorize.net.  You will need
+to go to `TrustCommerce <http://www.trustcommerce.com/>`_ and get your account
+setup.
+
+One special note with TrustCommerce - you must have the tclink libraries installed.
+You can get these from `here <http://www.trustcommerce.com/tclink.html>`_.
+
+Once the library is installed, you can fill in your login and password information
+in the admin config.
+
+.. index:: CyberSource
+
+CyberSource
+-----------
+CyberSource operates similarly to TrustCommerce and Authorize.net.  If you register
+at the `CyberSource Site <http://www.cybersource.com/>`_ you will get all the
+credentials you need to configure this module.
+
+.. index:: Paypal
+
+PayPal
+------
+
+Configuration
+^^^^^^^^^^^^^
+
+.. data:: PAYMENT_PAYPAL.BUSINESS
+
+   The email address for your paypal account.
+
+.. data:: PAYMENT_PAYPAL.BUSINESS_TEST
+
+   The email address for testing your paypal account.
+
+.. data:: PAYMENT_PAYPAL.CURRENCY_CODE
+
+   Currency code for Paypal transactions.
+
+   Defaults to USD.
+
+.. data:: PAYMENT_PAYPAL.LIVE
+
+   Whether to accept real payments.
+
+   Defaults to False.
+
+.. data:: PAYMENT_PAYPAL.POST_URL
+
+   The Paypal URL for real transaction posting.
+
+   Defaults to `https://www.paypal.com/cgi-bin/webscr`.
+
+.. data:: PAYMENT_PAYPAL.RETURN_ADDRESS
+
+   Where Paypal will return the customer after the purchase is complete. This
+   can be a named url and defaults to 'satchmo_checkout-success'.
+
+.. data:: PAYMENT_PAYPAL.POST_TEST_URL
+
+   The Paypal URL for test transaction posting.
+
+   Defaults to `https://www.sandbox.paypal.com/cgi-bin/webscr`.
+
+.. data:: PAYMENT_PAYPAL.URL_BASE
+
+   Defaults to `^paypal/`.
+
+.. index:: Google Checkout
+
+Google Checkout
+---------------
+There are a couple of different ways to integrate with Google Checkout. Satchmo
+uses the XML option. When configuring your checkout account via Google, select:
+"Option A - Configure your form to submit directly to Google Checkout."
+
+It is recommended that you review the `Google checkout documentation
+<http://code.google.com/apis/checkout/developer/Google_Checkout_XML_API.html#create_checkout_cart>`_
+in order to understand how the process works.
+
+.. index:: Protx
+
+Protx
+-----
+This processor is included in the default Satchmo store.

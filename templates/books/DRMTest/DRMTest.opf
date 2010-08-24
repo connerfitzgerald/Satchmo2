@@ -1,0 +1,82 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<package unique-identifier = "{2514C4F8-B0F5-4257-90DC-5C3522144C30}">
+   <metadata>
+      <x-metadata>
+         <meta name = "EbooksysVersion" content = "1.50"/>
+         <meta name = "page_content_size" content = "793 1122"/>
+         <meta name = "flipping_sound" content = "no"/>
+         <meta name = "background_music" content = "no"/>
+         <meta name = "audio_file" content = "DRMTest_opf_files/DRMTest_audio_.xml"/>
+         <meta name = "standard_direction" content = "yes"/>
+         <meta name = "autoflip" content = "no direction:forward atend:repeat interval:3000ms"/>
+         <meta name = "bookmark" content = "type:text autosize:no shape:roundrect 3deffect:yes gradienteffect:yes slope:-8 gap:3"/>
+      </x-metadata>
+   </metadata>
+   <manifest>
+      <item id = "item0" href = "DRMTest_opf_files/David Mackay Book1_1.swf" source = "pdf" media-type = "application/x-shockwave-flash"/>
+      <item id = "item1" href = "DRMTest_opf_files/David Mackay Book1_2.swf" source = "pdf" media-type = "application/x-shockwave-flash"/>
+      <item id = "item2" href = "DRMTest_opf_files/David Mackay Book1_3.swf" source = "pdf" media-type = "application/x-shockwave-flash"/>
+      <item id = "item3" href = "DRMTest_opf_files/David Mackay Book1_4.swf" source = "pdf" media-type = "application/x-shockwave-flash"/>
+      <item id = "item4" href = "DRMTest_opf_files/David Mackay Book1_5.swf" source = "pdf" media-type = "application/x-shockwave-flash"/>
+      <item id = "item5" href = "DRMTest_opf_files/David Mackay Book1_6.swf" source = "pdf" media-type = "application/x-shockwave-flash"/>
+      <item id = "item6" href = "DRMTest_opf_files/David Mackay Book1_7.swf" source = "pdf" media-type = "application/x-shockwave-flash"/>
+      <item id = "item7" href = "DRMTest_opf_files/David Mackay Book1_8.swf" source = "pdf" media-type = "application/x-shockwave-flash"/>
+      <item id = "item8" href = "DRMTest_opf_files/David Mackay Book1_9.swf" source = "pdf" media-type = "application/x-shockwave-flash"/>
+      <item id = "item9" href = "DRMTest_opf_files/David Mackay Book1_10.swf" source = "pdf" media-type = "application/x-shockwave-flash"/>
+      <item id = "item10" href = "DRMTest_opf_files/David Mackay Book1_11.swf" source = "pdf" media-type = "application/x-shockwave-flash"/>
+      <item id = "item11" href = "DRMTest_opf_files/blank.jpg" media-type = "image/x-flp"/>
+   </manifest>
+   <spine>
+      <itemref idref = "item0" thumbnail = "DRMTest_opf_files/thumbnail/tn_David Mackay Book1_1.jpg" numberingdescription = "1"/>
+      <itemref idref = "item1" thumbnail = "DRMTest_opf_files/thumbnail/tn_David Mackay Book1_2.jpg" numberingdescription = "2"/>
+      <itemref idref = "item2" thumbnail = "DRMTest_opf_files/thumbnail/tn_David Mackay Book1_3.jpg" numberingdescription = "3"/>
+      <itemref idref = "item3" thumbnail = "DRMTest_opf_files/thumbnail/tn_David Mackay Book1_4.jpg" numberingdescription = "4"/>
+      <itemref idref = "item4" thumbnail = "DRMTest_opf_files/thumbnail/tn_David Mackay Book1_5.jpg" numberingdescription = "5"/>
+      <itemref idref = "item5" thumbnail = "DRMTest_opf_files/thumbnail/tn_David Mackay Book1_6.jpg" numberingdescription = "6"/>
+      <itemref idref = "item6" thumbnail = "DRMTest_opf_files/thumbnail/tn_David Mackay Book1_7.jpg" numberingdescription = "7"/>
+      <itemref idref = "item7" thumbnail = "DRMTest_opf_files/thumbnail/tn_David Mackay Book1_8.jpg" numberingdescription = "8"/>
+      <itemref idref = "item8" thumbnail = "DRMTest_opf_files/thumbnail/tn_David Mackay Book1_9.jpg" numberingdescription = "9"/>
+      <itemref idref = "item9" thumbnail = "DRMTest_opf_files/thumbnail/tn_David Mackay Book1_10.jpg" numberingdescription = "10"/>
+      <itemref idref = "item10" thumbnail = "DRMTest_opf_files/thumbnail/tn_David Mackay Book1_11.jpg" numberingdescription = "11"/>
+      <itemref idref = "item11" thumbnail = "DRMTest_opf_files/thumbnail/tn_blank.jpg" numberingdescription = "&lt;Filler Page>"/>
+   </spine>
+   <authoring name = "FlipViewer Xpress Creator" version = "2.2.1.167" time = "2010-08-05-10-26-GMT0"/>
+   <drm_enabled version = "3.5.0" bookid = "6cd12cb663e67e49dc5a0f7efe433d85" authorid = "drm25asp570">
+      <publisher name = "London Business School"/>
+      <modifiedby name = "FlipViewer Xpress Creator" version = "2.2.1.167" time = "2010-08-05-10-26-GMT0"/>
+      <certificate type = "2" url = "DRMTest_opf_files/DRMTest.xml" alternative = "http://asp16.digitalflip.com/drm2/getcert" trial = "yes"/>
+      <searchabletext url = "DRMTest_opf_files/DRMTest_text_.xml"/>
+      <advertisingserver allow = "no"/>
+      <customized allow = "yes">
+         <ibutton show = "yes" click = "http://www.flipviewer.com"/>
+         <aboutbox allow = "yes" url = "http://www.flipviewer.com" company = "" title = "" logo = "" author = "" tel = "" address = ""/>
+         <bookmark show = "yes"/>
+         <search show = "yes"/>
+         <help show = "yes"/>
+         <branding show = "yes" url = "http://www.flipviewer.com" logo = ""/>
+         <shadow show = "yes"/>
+         <shadowmargin show = "yes"/>
+         <flipindicator show = "yes"/>
+         <sendemail show = "yes" url = "http://asp15.digitalflip.com/fvxmail63ag/"/>
+         <thumbnail show = "yes"/>
+         <pagetips show = "yes"/>
+         <toolbartips show = "yes"/>
+         <pagedescription show = "yes"/>
+         <note show = "yes"/>
+         <winframe show = "yes"/>
+         <toolbar show = "yes" position = "1"/>
+         <sidebar show = "yes" position = "9"/>
+         <saveas show = "yes" single = "yes" wholebook = "DRMTest_opf_files/pdfs/DRMTest__.pdf"/>
+         <highlight show = "yes"/>
+         <settings show = "yes"/>
+         <autoflipping show = "yes"/>
+         <watermark show = "no"/>
+         <advertisingpage show = "no"/>
+         <zoompage show = "yes" factor = "150"/>
+         <skin show = "no"/>
+         <iframelink show = "no" url = "DRMTest_opf_files/iframe.csv"/>
+      </customized>
+      <digital_signature content = "97cdf62a268841a09e7df73f2eb5d7ce" checksum = "526C35564E6D54346C3073663769626C5731434A3548456C334835385241315A5A4D6F30432B6B2B665A593D"/>
+   </drm_enabled>
+</package>
